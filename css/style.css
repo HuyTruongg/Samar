@@ -1085,7 +1085,6 @@ header li a :hover{
     align-items: center;
     position: relative;
     height: 100%;
-
     border-radius: 8px;
     box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
     transition: all 1s;
@@ -1107,7 +1106,7 @@ header li a :hover{
 .form__icon button{
     position: relative;
     width: 100%;
-    height: auto;
+    height: 57px;
     border-radius: 0 8px 8px 0;
     border: none;
     text-align: center;
@@ -1117,6 +1116,8 @@ header li a :hover{
     z-index: 2;
     font-size: 20px;
 }
+.form__icon button i{
+
 .mail{
     height: 100%;
     width: 100%;
@@ -1206,6 +1207,24 @@ header li a :hover{
     left: 0px;
     top: 8px; 
 }
+.footer-title:before,.footer-title:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 20px;
+    background-size: 200%;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+}
+.footer-title:before{
+    width: 15px; 
+}
+.footer-title:after{
+    width: 45px;
+    left: 20px;
+}
+
 
 .footer__container-bot{
     background-color: #1f343b;
@@ -1219,21 +1238,37 @@ header li a :hover{
 .bot__content{
     display: flex;
 }
-.bot__right{
+.bot__left{
     width: 50%;
     text-align: left;
 }
-
-.bot__left{
+.bot__right{
     width: 50%;
     text-align: right;
-
 }
-
-
-.bot__icon ul li{
+.bot__left span{
+    color: rgba(255,255,255,0.5);
+}
+.bot__right ul li{
     list-style: none;
-
+    display: inline;
+}
+.bot__right ul li a{
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 2px;
+    transition: all 1s;
+}
+.bot__right ul li a:hover{
+    background-size: 200%;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
 }
 
 
