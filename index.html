@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samar</title>
 
+    <!-- OWL CAROUSEl  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <!-- FONT ROBOTO  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +46,7 @@
     <!-- Landing page   -->
     <header>
         <div class="header__content">
-            <a href="#" class="logo">
+            <a href="#" class="brand">
                 <img src="./img/logo-2.png" alt="">
             </a>
             <div class="header__list">
@@ -228,32 +238,43 @@
                         <h2>Behind The Story Of Samar Agency</h2>
                     </div>
                     <div class="feature__table">
-                        <div class="table__icon">
-                            <i class="flaticon-idea"></i>
+                        <div class="table__content">
+                            <div class="table__icon">
+                                <i class="flaticon-idea"></i>
+                            </div>
+                            <div class="table__text">
+                                <h4>Idea & Analysis Gathering</h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.
+                                </p>
+                            </div>
                         </div>
-                        <div class="table_text">
-                            <h4>Idea & Analysis Gathering
-                            </h4>
-                            <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                    </div>
+                    <div class="feature__table feature__table--2">
+                        <div class="table__content">
+                            <div class="table__icon">
+                                <i class="flaticon-coding"></i>
+                            </div>
+                            <div class="table__text">
+                                <h4>Idea & Analysis Gathering
+                                </h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="feature__table">
-                        <div class="table__icon">
-                            <i class="flaticon-coding"></i>
-                        </div>
-                        <div class="table_text">
-                            <h4>Idea & Analysis Gathering
-                            </h4>
-                            <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
-                        </div>
-                    </div>
-                    <div class="feature__table">
-                        <div class="table__icon">
-                            <i class="flaticon-rocket"></i>
-                        </div>
-                        <div class="table_text">
-                            <h4>Testing & Launching</h4>
-                            <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</p>
+                        <div class="table__content">
+                            <div class="table__icon">
+                                <i class="flaticon-rocket"></i>
+                            </div>
+                            <div class="table__text">
+                                <h4>Testing & Launching</h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,27 +284,476 @@
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
     </section>
-    <!-- PORFOLIO  -->
-    <section class="porfolio">
 
+    <!-- PROJECT  -->
+    <section class="project">
+        <div class="project__container">
+            <div class="project__title">
+                <h6>Portfolio</h6>
+                <h2>Our Latest Work</h2>
+            </div>
+            <div class="project__content">
+                <div class="project__item item1">
+                    <img src="./img/pic1_2.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                        <!-- <div class="project__shine"></div>             STUCK -->
+                    </div>
+                </div>
+                <div class="project__item">
+                    <img src="./img/pic2_1.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <img src="./img/pic3_1.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <img src="./img/pic4.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__item item5">
+                    <img src="./img/pic5.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__item item6">
+                    <img src="./img/pic6.jpg" alt="">
+                    <div class="project__overlay">
+                        <div class="project__icon">
+                            <a href=""><i class="las la-plus"></i></a>
+                        </div>
+                        <div class="project__text">
+                            <h5>Software Landing</h5>
+                            <p>By John Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!-- PLAN  -->
     <section class="plan">
-
+        <div class="plan__container">
+            <div class="plan__title">
+                <h6>Choose Your Plan</h6>
+                <h2>Choose Your Plan</h2>
+            </div>
+            <div class="plan__button">
+                <span>MONTHLY</span>
+                <span>YEARLY</span>
+            </div>
+            <div class="plan__column">
+                <div class="column">
+                    <div class="column__content">
+                        <div class="column__title">
+                            <h3>Basic Plan</h3>
+                        </div>
+                        <div class="column__img">
+                            <img src="./img/pic4_1.jpg" alt="">
+                        </div>
+                        <div class="column__price">
+                            <h2>$49<small class="price__small">/Month</small></h2>
+                        </div>
+                        <ul class="column__list">
+                            <li>Graphic Design</li>
+                            <li>Web Design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO Marketing</li>
+                            <li>Business Analysis</li>
+                        </ul>
+                        <div class="column__button">
+                            <button>Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column__content">
+                        <div class="column__title">
+                            <h3>Standard Plan</h3>
+                        </div>
+                        <div class="column__img">
+                            <img src="./img/pic5_1.jpg" alt="">
+                        </div>
+                        <div class="column__price">
+                            <h2>$99<small class="price__small">/Month</small>
+                            </h2>
+                        </div>
+                        <ul class="column__list">
+                            <li>Graphic Design</li>
+                            <li>Web Design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO Marketing</li>
+                            <li>Business Analysis</li>
+                        </ul>
+                        <div class="column__button">
+                            <button>Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column__content">
+                        <div class="column__title">
+                            <h3>Premium Plan</h3>
+                        </div>
+                        <div class="column__img">
+                            <img src="./img/pic6_1.jpg" alt="">
+                        </div>
+                        <div class="column__price">
+                            <h2>$149<small class="price__small">/Month</small></h2>
+                        </div>
+                        <ul class="column__list">
+                            <li>Graphic Design</li>
+                            <li>Web Design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO Marketing</li>
+                            <li>Business Analysis</li>
+                        </ul>
+                        <div class="column__button">
+                            <button>Start Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!-- CLIENT SAY  -->
     <section class="say">
+        <div class="say__container">
+            <div class="say__title">
+                <h6>Testimonial</h6>
+                <h2>What Our Clients Say's</h2>
+            </div>
+            <div class="say__row">
 
+                <!-- SWIPER  -->
+                <div class="testimonial-content">
+                    <div class="swiper-container testimonial-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-pic">
+                                    <img src="./img/pic1_4.jpg" alt="">
+                                    <div class="shape-bx"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-pic">
+                                    <img src="./img/pic2_3.jpg" alt="">
+                                    <div class="shape-bx"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-pic">
+                                    <img src="./img/pic3_3.jpg" alt="">
+                                    <div class="shape-bx"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container testimonial-comment">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-text">
+                                    <strong class="testimonial-name">Cak Dikin</strong>
+                                    <span class="testimonial-position">CEO &amp; Founder </span>
+                                    <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                        <br>
+                                        vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget
+                                        nunc. Etiam <br> sed facilisis erat.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-text">
+                                    <strong class="testimonial-name">Cak Dikin</strong>
+                                    <span class="testimonial-position">CEO &amp; Founder </span>
+                                    <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                        <br>
+                                        vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget
+                                        nunc. Etiam <br> sed facilisis erat.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-text">
+                                    <strong class="testimonial-name">Cak Dikin</strong>
+                                    <span class="testimonial-position">CEO &amp; Founder </span>
+                                    <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                        <br>
+                                        vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget
+                                        nunc. Etiam <br> sed facilisis erat.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
+
     <!-- BLOG  -->
     <section class="blog">
-
+        <div class="blog__container">
+            <div class="blog__title">
+                <h6>Our Blog</h6>
+                <h2>Latest News & Blog</h2>
+            </div>
+            <div class="blog__content">
+                <!-- SLIDER  -->
+                <div class=" blog-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="item__content">
+                            <div class="item__img">
+                                <img src="./img/pic3.jpg" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h4>Maecenas maximus augue eget libero dictum.</h4>
+                                <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus
+                                    justo quam.</p>
+                                <div class="item__comment">
+                                    <ul>
+                                        <li class="date">28 June 2021</li>
+                                        <li><i class="las la-user-circle"></i>By John Doe</li>
+                                        <li><i class="las la-comment"></i>Comments<span> 15</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__content">
+                            <div class="item__img">
+                                <img src="./img/pic1_1.jpg" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h4>Maecenas maximus augue eget libero dictum.</h4>
+                                <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                    Phasellus
+                                    justo quam.</p>
+                                <div class="item__comment">
+                                    <ul>
+                                        <li class="date">28 June 2021</li>
+                                        <li><i class="las la-user-circle"></i>John Doe</li>
+                                        <li><i class="las la-comment"></i>Comments<span> 15</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__content">
+                            <div class="item__img">
+                                <img src="./img/pic2.jpg" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h4>Maecenas maximus augue eget libero dictum.</h4>
+                                <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                                    Phasellus
+                                    justo quam.</p>
+                                <div class="item__comment">
+                                    <ul>
+                                        <li class="date">25 March 2021</li>
+                                        <li><i class="las la-user-circle"></i>John Doe</li>
+                                        <li><i class="las la-comment"></i>Comments<span> 15</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
+
+    <!-- LOGO  -->
+    <section class="logo">
+        <div class="logo__container">
+            <!-- SLIDER  -->
+            <div class="logo-slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="logo__content">
+                        <img src="./img/logo-pink1.png" alt="">
+                        <img src="./img/logo-light1.png" alt="">
+                    </div>
+                </div>
+                <div class="logo__content">
+                    <img src="./img/logo-pink2.png" alt="">
+                    <img src="./img/logo-light2.png" alt="">
+                </div>
+                <div class="logo__content">
+                    <img src="./img/logo-pink3.png" alt="">
+                    <img src="./img/logo-light3.png" alt="">
+                </div>
+                <div class="logo__content">
+                    <img src="./img/logo-pink4.png" alt="">
+                    <img src="./img/logo-light4.png" alt="">
+                </div>
+                <div class="logo__content">
+                    <img src="./img/logo-pink5.png" alt="">
+                    <img src="./img/logo-light5.png" alt="">
+                </div>
+                <div class="logo__content">
+                    <img src="./img/logo-pink6.png" alt="">
+                    <img src="./img/logo-light6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER  -->
     <section class="footer">
-
+        <div class="footer__container">
+            <!-- SUB  -->
+            <div class="footer__container-sub">
+                <div class="footer__sub">
+                    <div class="sub__content">
+                        <div class="sub__left">
+                            <h2>Subscribe To Our Newsletter</h2>
+                        </div>
+                        <div class="sub__right">
+                            <div class="form__input">
+                                <form>
+                                    <input class="mail" type="email" placeholder="Your Email Address">
+                                </form>
+                            </div>
+                            <div class="form__icon">
+                                <button><i class="las la-paper-plane scale4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP  -->
+            <div class="footer__container-top">
+                <div class="footer__top">
+                    <div class="footer__content">
+                        <div class="footer__row">
+                            <div class="footer__info">
+                                <div class="footer__logo">
+                                    <img src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="footer__list">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-phone gradient"></i>
+                                            <span>1800-123-4567<br>+91 987-654-3210</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope gradient"></i>
+                                            <span>info@example.com <br>services@gmail.com</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Demo Address #8901 Marmora <br> Road Chi Minh City, Vietnam</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__item">
+                                <h5 class="footer-title">Our links</h5>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h5 class="footer-title">Our Services</h5>
+                                <ul>
+                                    <li><a href="#">Strategy &amp; Research</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Web Solution</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">App Design </a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h5 class="footer-title">Other links</h5>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Support </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BOT  -->
+            <div class="footer__container-bot">
+                <div class="footer__bot">
+                    <div class="bot__container">
+                        <div class="bot__content">
+                            <div class="bot__right">
+                                <span class="copyright-text">Copyright © 2021
+                                    <a href="#">DexignZone</a>. All rights reserved</span>
+                            </div>
+                            <div class="bot__left">
+                                <div class="bot__icon">
+                                    <ul>
+                                        <li><a class="fab fa-facebook-f" href="#"></a></li>
+                                        <li><a class="fab fa-instagram" href="#"></a></li>
+                                        <li><a class="fab fa-twitter" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -308,10 +778,65 @@
         $('.counter').countUp();
     </script>
 
+    <!-- SWIPER  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            freeMode: true,
+            autoplay: true,
+            loop: true,
+            speed: 3000
+        });
+        var testimonialContent = new Swiper(".testimonial-comment", {
+            spaceBetween: 10,
+            autoplay: true,
+            loop: true,
+            speed: 3000,
+            thumbs: {
+                swiper: testimonialThumbs
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+
     <!-- Javascript  -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
-
+    <!-- OWL CAROUSEL  -->
+    <script src="./js/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.blog-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 4000,
+            responsive: {
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.logo-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            responsive: {
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 
 </body>
 
