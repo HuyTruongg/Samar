@@ -156,6 +156,7 @@ header li a :hover{
     font-size: 24px;
     width: 35px;
     height: 35px;
+    background-size: 200%;
     background-image: linear-gradient(
         to right,
         #f55f8d 0,
@@ -180,7 +181,7 @@ header li a :hover{
     padding: 20px 35px;
     display: inline-block;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
     border:none;
 }
@@ -363,10 +364,52 @@ header li a :hover{
     font-size: 15px;
     margin-bottom: 30px;
     list-style: none;
-    
+}
+.about__right ul li{
+    position: relative;
+    padding: 8px 5px 8px 35px;
+}
+.about__right ul li:before{
+    content: "\f120";
+    font-family: Flaticon;
+    font-size: 24px; 
+    color: #f55f8d;
+}
+.about__right ul li:before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
+.about__right button{
+    align-items: center;
+    position: relative;
+    /* z-index: 9; */
+    border-radius: 50px;
+    padding: 20px 35px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    border:none;
+}
+.about__right button{
+    display: inline-block;
+    background-size: 200%;
+    border-color: transparent;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    color: #fff;
+    transition: 0.5s;
+}
+.about__right button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
 
 /* NUMBER */
 .number{
@@ -621,16 +664,27 @@ header li a :hover{
     transform: translateY(50px);
     transition: all 0.5s;
 }
-/* .project__shine{
+.project__shine{
+    position: relative;
+    overflow: hidden; 
+}
+.project__shine:before {
     position: absolute;
-    overflow: hidden;
     top: 0;
-    left: -4%;
-    width: 100%;
-    height: 100%;   
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);  
-    transform: skewX(360deg);
-} */
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+.project__shine:hover:before{
+    animation: shine .75s;
+}
+
 .project__item:hover .project__icon{
     transform: translate(0px,0px);
 }
@@ -707,7 +761,6 @@ header li a :hover{
     color: #fff;
     font-size: 14px;
 }
-
 
 .plan__column{
     display: flex;
@@ -838,7 +891,7 @@ header li a :hover{
     padding: 4px;
     position: relative;
     z-index: 2;
-    background-color: pink;
+    background-color: #f55f8d;
 }
 .testimonial-thumbs {
     width: 300px;
@@ -858,8 +911,68 @@ header li a :hover{
     padding: 30px 0 0;
     transition: all 0.5s;
 }
+
+.say__row .testimonial-thumbs .testimonial-pic .shape-bx {
+    position: relative;
+    height: 35px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s; }
+.say__row .testimonial-thumbs .testimonial-pic .shape-bx:before, .say__row .testimonial-thumbs .testimonial-pic .shape-bx:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    transition: all 1s; 
+}
+.say__row .testimonial-thumbs .testimonial-pic .shape-bx:after {
+    background-image: url(../img/pattern12.png);
+    background-position: bottom;
+    background-size: contain;
+    height: 35px;
+    width: 50px; }
+
+.say__row .testimonial-thumbs .testimonial-pic .shape-bx:before {
+    background-color: #f55f8d;
+    height: 35px;
+    width: 50px; }
+.say__row .testimonial-thumbs .testimonial-pic:before, .say__row .testimonial-thumbs .testimonial-pic:after {
+    content: "";
+    background-color: #f55f8d;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; }
+.say__row .testimonial-thumbs .testimonial-pic:before {
+    height: 15px;
+    width: 15px;
+    bottom: 20px; 
+}
+.say__row .testimonial-thumbs .testimonial-pic:after {
+    height: 10px;
+    width: 10px;
+    bottom: 0; 
+}
+.say__row .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
+  padding: 0 0 40px; 
+}
+  .say__row .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic .shape-bx {
+    opacity: 1; 
+}
+  .say__row .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic:before, .say__row .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic:after {
+    opacity: 1; 
+}
+
 .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
     padding: 0 0 40px;
+
 }
 .testimonial-text {
     padding: 30px;
@@ -1027,8 +1140,54 @@ header li a :hover{
     margin-right: 30px;
     overflow: hidden;
 }
-
-
+.logo__img{
+    padding: 20px 30px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 1s;
+    position: relative;
+}
+.logo__img img{
+    width: auto;
+    margin: auto;
+}
+.logo__img:hover {
+    background: #f55f8d;
+    box-shadow: 5px 0 30px 0 rgba(245, 95, 141, 0.5); 
+}
+.logo__img:hover .logo__main {
+    display: none; 
+}
+.logo__img:hover .logo__hover {
+    display: block; 
+}
+.logo__container .logo__img{
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+}
+.logo__container .logo__img:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-size: 200%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s; }
+.logo__container .logo__img:hover {
+      box-shadow: 5px 0 30px 0 rgba(245, 95, 141, 0.05);
+}
+.logo__container .logo__img:hover:after {
+        opacity: 1; 
+}
 
 
 /* FOOTER  */
@@ -1043,6 +1202,28 @@ header li a :hover{
     background-size: contain;
     z-index: 1;
     font-family: "Poppins", sans-serif;
+}
+.footer{
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: auto;
+    background-color: #0e1b1f;
+    background-size: contain;
+    z-index: 1; 
+}
+.footer:before {
+    content: "";
+    background-image: url(../img/pattern2.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
 }
 .footer__container-sub{
     width: 70%;
@@ -1101,7 +1282,6 @@ header li a :hover{
     position: relative;
     cursor: pointer;
     width: 20%;
-    
 }
 .form__icon button{
     position: relative;
@@ -1115,8 +1295,16 @@ header li a :hover{
     background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
     z-index: 2;
     font-size: 20px;
+    transition: 0.5s;
 }
 .form__icon button i{
+    font-size: 30px;
+    color: #fff;
+}
+.form__icon button:hover {
+    background-position: right center;
+    text-decoration: none;
+}
 
 .mail{
     height: 100%;
@@ -1133,8 +1321,6 @@ header li a :hover{
 .mail:hover{
     border: 1px solid #cccccc;
 }
-
-
 .footer__container-top{
     width: 70%;
     margin: auto;
@@ -1271,6 +1457,15 @@ header li a :hover{
     background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
 }
 
+/* BACK TO TOP  */
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top--fade-out {
+    opacity: .5;
+}
+
 
 
 
@@ -1282,3 +1477,7 @@ header li a :hover{
     100% {
       transform: rotate(1deg) translate(2px, 2px); } 
 }
+
+@keyframes shine {
+    100% {
+      left: 125%; } }

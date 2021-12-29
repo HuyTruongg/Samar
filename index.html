@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samar</title>
+    <!-- BACK TO TOP  -->
+    <link rel="stylesheet" href="./js/back-to-top-master/assets/css/style.css">
+
+    <!-- LIGHT GALLERY  -->
+    <link type="text/css" rel="stylesheet" href="./js/lightGallery-master/dist/css/lightgallery.css" />
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="./js/lightGallery-master/dist/css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="./js/lightGallery-master/dist/css/lg-thumbnail.css" />
 
     <!-- OWL CAROUSEl  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
@@ -296,24 +304,25 @@
                 <h2>Our Latest Work</h2>
             </div>
             <div class="project__content">
-                <div class="project__item item1">
+                <div class="project__item item1 project__shine">
                     <img src="./img/pic1_2.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic1_2.jpg" data-exthumbimage="./img/pic1_2.jpg" data-lg-size="800-517"
+                                class="lightimg" data-src="./img/pic1_2.jpg" data-sub-html="Design"><i
+                                    class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
                             <p>By John Doe</p>
                         </div>
-                        <!-- <div class="project__shine"></div>             STUCK -->
                     </div>
                 </div>
-                <div class="project__item">
+                <div class="project__item project__shine">
                     <img src="./img/pic2_1.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic2_1.jpg"><i class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
@@ -321,11 +330,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="project__item">
+                <div class="project__item project__shine">
                     <img src="./img/pic3_1.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic3_1.jpg"><i class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
@@ -333,11 +342,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="project__item">
+                <div class="project__item project__shine">
                     <img src="./img/pic4.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic4.jpg"><i class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
@@ -345,11 +354,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="project__item item5">
+                <div class="project__item item5 project__shine">
                     <img src="./img/pic5.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic5.jpg"><i class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
@@ -357,11 +366,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="project__item item6">
+                <div class="project__item item6 project__shine">
                     <img src="./img/pic6.jpg" alt="">
                     <div class="project__overlay">
-                        <div class="project__icon">
-                            <a href=""><i class="las la-plus"></i></a>
+                        <div class="project__icon " id="animated-thumbnails">
+                            <a href="./img/pic6.jpg"><i class="las la-plus"></i></a>
                         </div>
                         <div class="project__text">
                             <h5>Software Landing</h5>
@@ -470,7 +479,6 @@
                 <h2>What Our Clients Say's</h2>
             </div>
             <div class="say__row">
-
                 <!-- SWIPER  -->
                 <div class="testimonial-content">
                     <div class="swiper-container testimonial-thumbs">
@@ -618,31 +626,54 @@
         <div class="logo__container">
             <!-- SLIDER  -->
             <div class="logo-slider owl-carousel owl-theme">
-                <div class="item">
+
+                <div class="item-logo">
                     <div class="logo__content">
-                        <img src="./img/logo-pink1.png" alt="">
-                        <img src="./img/logo-light1.png" alt="">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink1.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light1.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="logo__content">
-                    <img src="./img/logo-pink2.png" alt="">
-                    <img src="./img/logo-light2.png" alt="">
+                <div class="item-logo">
+                    <div class="logo__content">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink2.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light2.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="logo__content">
-                    <img src="./img/logo-pink3.png" alt="">
-                    <img src="./img/logo-light3.png" alt="">
+                <div class="item-logo">
+                    <div class="logo__content">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink3.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light3.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="logo__content">
-                    <img src="./img/logo-pink4.png" alt="">
-                    <img src="./img/logo-light4.png" alt="">
+                <div class="item-logo">
+                    <div class="logo__content">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink4.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light4.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="logo__content">
-                    <img src="./img/logo-pink5.png" alt="">
-                    <img src="./img/logo-light5.png" alt="">
+                <div class="item-logo">
+                    <div class="logo__content">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink5.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light5.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="logo__content">
-                    <img src="./img/logo-pink6.png" alt="">
-                    <img src="./img/logo-light6.png" alt="">
+                <div class="item-logo">
+                    <div class="logo__content">
+                        <div class="logo__img">
+                            <img class="logo__main" src="./img/logo-pink6.png" alt="">
+                            <img class="logo__hover" src="./img/logo-light6.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -832,11 +863,35 @@
             dots: false,
             responsive: {
                 1000: {
-                    items: 3
+                    items: 6
                 }
             }
         })
     </script>
+
+    <!-- LIGHT GALLERY  -->
+    <script src="./js/lightGallery-master/dist/lightgallery.umd.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="./js/lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./js/lightGallery-master/dist/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById("animated-thumbnails"), {
+            selector: ".lightimg",
+            plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
+            alignThumbnails: "left",
+            loop: true,
+            allowMediaOverlap: true,
+            toggleThumb: true,
+            showZoomInOutIcons: true,
+            actualSize: false,
+            exThumbImage: "data-exthumbimage"
+        });
+    </script>
+
+    <!-- BACK TO TOP  -->
+    <script src="./js/back-to-top-master/assets/js/main.js"></script>
+    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 
 </body>
 
